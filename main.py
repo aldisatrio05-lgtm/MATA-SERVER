@@ -1,3 +1,4 @@
+from fastapi import FastAPI
 import subprocess
 import time
 import os
@@ -5,7 +6,7 @@ from rich.console import Console
 from rich.text import Text
 from rich.panel import Panel
 from datetime import datetime
-
+app = FastAPI() 
 console = Console()
 
 class SimplePHPServer:
